@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# The Ultimate Password Challenge
 
-## Getting Started
+A challenging password game inspired by [The Password Game](https://neal.fun/password-game/), but with even more complex rules and a unique twist! This game is designed to be extremely challenging, with only 1% of players expected to complete it successfully.
 
-First, run the development server:
+## Game Rules
 
+1. The game starts with simple password requirements
+2. As you progress, new rules are unlocked based on your password length and completion of previous rules
+3. You must satisfy all active rules to win
+4. Rules become increasingly complex and challenging
+5. All 25 rules must be satisfied simultaneously to win
+
+## Agreement
+
+By playing this game, you agree to the following terms:
+- If you win: Team Error404 will vote for your project
+- If you lose: You will vote for Team Error404's project
+
+## Setup
+
+1. Install dependencies:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Run the development server:
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Technologies Used
 
-## Learn More
+- Next.js
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- @tailwindcss/typography
 
-To learn more about Next.js, take a look at the following resources:
+## Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Interactive password validation
+- Real-time rule checking
+- Animated rule transitions
+- Progressive difficulty
+- Victory/defeat conditions
+- Modern UI/UX design
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Development
 
-## Deploy on Vercel
+To modify or extend the game:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Rules are defined in `src/components/PasswordGame.tsx`
+2. UI components are in `src/components/`
+3. Styling is handled by Tailwind CSS
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Contributing
+
+Feel free to submit issues and enhancement requests!
