@@ -14,7 +14,6 @@ export default function PasswordGame() {
   const [password, setPassword] = useState('');
   const [activeRules, setActiveRules] = useState<Rule[]>([]);
   const [gameWon, setGameWon] = useState(false);
-  const [gameLost, setGameLost] = useState(false);
 
   const allRules: Rule[] = [
     {
@@ -234,7 +233,7 @@ export default function PasswordGame() {
     if (allRulesPassed && unlockedRules.length === allRules.length) {
       setGameWon(true);
     }
-  }, [password]);
+  }, [password, allRules]);
 
   return (
     <div className="container mx-auto px-4 py-8 max-w-4xl">
@@ -317,7 +316,7 @@ export default function PasswordGame() {
               Congratulations!
             </h2>
             <p className="text-lg sm:text-xl mb-2 text-green-300">
-              You've mastered the Ultimate Password Challenge!
+              You&apos;ve mastered the Ultimate Password Challenge!
             </p>
             <p className="text-base sm:text-lg text-green-400">
               Team Error404 will vote for your project!

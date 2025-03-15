@@ -18,7 +18,7 @@ export default function TermsModal({ onAccept }: TermsModalProps) {
         </h2>
         <div className="prose prose-sm sm:prose prose-invert max-w-none mb-8">
           <p className="mb-6 text-gray-300">
-            Welcome to "The Ultimate Password Challenge" by Team Error404! Before you proceed,
+            Welcome to &quot;The Ultimate Password Challenge&quot; by Team Error404! Before you proceed,
             please read and agree to the following terms:
           </p>
           <ol className="list-decimal pl-4 space-y-4 text-gray-300">
@@ -28,7 +28,7 @@ export default function TermsModal({ onAccept }: TermsModalProps) {
             </li>
             <li className="transition-colors hover:text-white">
               However, if you fail to complete all rules or give up,
-              you agree to vote for Team Error404's project.
+              you agree to vote for Team Error404&apos;s project.
             </li>
             <li className="transition-colors hover:text-white">
               This is a challenging game designed to test your problem-solving skills.
